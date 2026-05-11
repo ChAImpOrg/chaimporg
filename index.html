@@ -251,30 +251,37 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
+      align-items: stretch;
     }
 
     .stat {
       text-align: center;
       padding: 1rem;
       border-right: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
     }
 
     .stat:last-child { border-right: none; }
 
     .stat-number {
       font-family: 'DM Serif Display', serif;
-      font-size: 2.8rem;
+      font-size: 2rem;
       color: var(--teal);
-      line-height: 1;
-      margin-bottom: 0.5rem;
+      line-height: 1.1;
+      margin-bottom: 0;
     }
 
     .stat-label {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: rgba(255,255,255,0.6);
       font-weight: 400;
       letter-spacing: 0.03em;
       text-transform: uppercase;
+      line-height: 1.4;
     }
 
     /* ── SECTION COMMON ── */
@@ -890,7 +897,7 @@
   <!-- STATS -->
   <div class="stats">
     <div class="stat">
-      <div class="stat-number" style="font-size: 1.8rem;">Enterprise</div>
+      <div class="stat-number">Enterprise</div>
       <div class="stat-label">Grade Technology Standard</div>
     </div>
     <div class="stat">
@@ -902,7 +909,7 @@
       <div class="stat-label">You Own Everything We Build</div>
     </div>
     <div class="stat">
-      <div class="stat-number" style="font-size: 1.8rem;">By Application</div>
+      <div class="stat-number">Open Door</div>
       <div class="stat-label">How We Engage</div>
     </div>
   </div>
