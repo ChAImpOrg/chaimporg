@@ -82,7 +82,8 @@
     .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(13,27,42,0.1); border-color: transparent; }
     .service-card:hover::before { transform: scaleX(1); }
     .service-icon { width: 48px; height: 48px; background: rgba(79,179,169,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; font-size: 1.4rem; }
-    .service-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.75rem; }
+    .service-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.25rem; }
+    .service-plain { font-size: 0.82rem; color: var(--teal); font-weight: 600; font-style: italic; margin-bottom: 0.75rem; }
     .service-card p { font-size: 0.92rem; color: var(--gray); line-height: 1.65; }
 
     /* ── WHO WE SERVE ── */
@@ -212,7 +213,7 @@
     <div class="hero-content">
       <div class="hero-badge">501(c)(3) Pending · Est. 2026</div>
       <h1>Your mission<br>deserves <em>more</em><br>than admin.</h1>
-      <p class="hero-sub">ChAImp champions small and medium nonprofits — bringing enterprise-grade AI and digital transformation to the organizations that need it most, but can least afford it. <strong style="color: var(--teal);">For qualifying nonprofits, our work is pro bono. Always.</strong></p>
+      <p class="hero-sub">ChAImp champions small and medium nonprofits — bringing enterprise-grade AI and digital transformation to the organizations that need it most, but can least afford it. <strong style="color: var(--teal);">If your mission is bigger than your budget, our work is pro bono. Always.</strong></p>
       <p class="hero-human">We believe AI should amplify human connection — never replace it.</p>
       <div class="hero-actions">
         <a href="https://linkedin.com/in/jwhelanmsft" target="_blank" class="btn-primary">Let's Talk →</a>
@@ -254,31 +255,37 @@
         <div class="service-card fade-up">
           <div class="service-icon">🤖</div>
           <h3>AI Integration</h3>
+          <p class="service-plain">Smarter workflows without the complexity</p>
           <p>Purpose-built AI tools and workflows tailored to your nonprofit's operations — helping your team work smarter, not harder.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">🧠</div>
           <h3>Knowledge Systems</h3>
+          <p class="service-plain">Like Google — but for your own organisation's data</p>
           <p>Help your team find the right information at the right time. We build systems that surface answers from your own data — securely, responsibly, and without the jargon.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">⚡</div>
           <h3>Digital Transformation</h3>
+          <p class="service-plain">Swap the spreadsheets for something that actually works</p>
           <p>Modernizing legacy processes and tools to reduce friction and manual work — so your team spends time on mission, not spreadsheets.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">☁️</div>
           <h3>Infrastructure Modernization</h3>
+          <p class="service-plain">Secure, modern technology that grows with you</p>
           <p>Cloud-first architecture that is secure, scalable, and cost-efficient. Built to grow with you — not against you.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">🛡️</div>
           <h3>Governed AI Solutions</h3>
+          <p class="service-plain">AI that protects your donors, clients and reputation</p>
           <p>Responsible AI and data governance frameworks appropriate for mission-driven organizations. We take the risk seriously so you don't have to worry.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-icon">🔧</div>
           <h3>Custom Tooling & Low-Code</h3>
+          <p class="service-plain">Practical tools built for your budget and your team</p>
           <p>Affordable, practical tools your team can actually maintain — built with the right technology for your specific challenge, not a one-size-fits-all solution.</p>
         </div>
       </div>
@@ -319,6 +326,7 @@
           <h3>Bull Terrier Rescue, Inc.</h3>
           <p class="casestudy-type">Website Modernization · Digital Transformation</p>
           <p>A 501(c)(3) rescue organization serving California, Nevada, Oregon, and Washington — saving Bull Terriers in crisis since 1995. Their legacy WordPress site was broken and directing visitors to Facebook to find available dogs. We rebuilt their entire web presence from scratch.</p>
+          <p style="color: var(--teal); font-weight: 600; font-size: 0.92rem;">Result: a complete website rebuild delivered in under 24 hours at zero cost to the organization — live and serving the rescue community immediately.</p>
           <div class="casestudy-tags">
             <span class="cs-tag">React</span>
             <span class="cs-tag">Claude Code</span>
@@ -359,7 +367,7 @@
     <div class="promise-inner">
       <span class="section-label">Our Promise</span>
       <h2 class="section-title">We don't just deliver.<br>We transfer capability.</h2>
-      <p class="section-body">We don't hand you something complicated and walk away. We build with your team, train alongside them, and leave you more capable than when we arrived — fully owning everything we created together.</p>
+      <p class="section-body">We don't hand you something complicated and walk away. We build with your team, train alongside them, and leave you more capable than when we arrived — fully owning everything we created together. Most engagements require less than two hours of your team's time per week.</p>
       <div class="promise-pillars">
         <div class="pillar fade-up">
           <div class="pillar-number">01</div>
@@ -404,7 +412,7 @@
           <br><br>
           British by birth and American by choice, the same rigor, reliability, and pragmatism he applied across the full Microsoft ecosystem now goes to work for the nonprofits that need it most. Organizations that know technology could transform their impact — but don't have the time, skills, or budget to get there.
           <br><br>
-          <strong>ChAImp is his give-back.</strong> Delivered free to qualifying nonprofits. Built with whatever technology serves the mission best — because the outcome always matters more than the stack.
+          <strong>ChAImp is his give-back.</strong> Delivered free to nonprofits whose mission is bigger than their budget. Built with whatever technology serves the mission best — because the outcome always matters more than the stack.
           <br><br>
           <em style="color: var(--teal); font-style: italic;">The name ChAImp — pronounced "champ" — comes from somewhere personal — a reminder that championing others is the most important thing any of us can do.</em>
         </p>
@@ -420,7 +428,8 @@
       <span class="section-label">Get Involved</span>
       <h2 class="section-title">Ready for more mission?</h2>
       <p class="section-body">If you lead or support a nonprofit and want to explore what AI and modern technology could do for your organization — let's talk. No jargon. No pressure. Just a conversation.</p>
-      <p class="section-body" style="font-style: italic; color: var(--teal); margin-top: -1.5rem;">There's no invoice coming. For qualifying nonprofits, ChAImp's work is entirely pro bono — because the mission matters more than the margin.</p>
+      <p class="section-body" style="font-style: italic; color: var(--teal); margin-top: -1.5rem;">There's no invoice coming. If your mission is bigger than your budget, ChAImp is for you — because the mission always matters more than the margin.</p>
+      <p class="section-body" style="font-size: 0.95rem; color: var(--gray); margin-top: -1.5rem;">Yes, it really is free. No unexpected costs to you. No complicated onboarding. We handle the complexity so you don't have to.</p>
       <div class="cta-actions">
         <a href="https://linkedin.com/in/jwhelanmsft" target="_blank" class="btn-primary">Start the Conversation →</a>
         <a href="https://github.com/ChAImpOrg" target="_blank" class="btn-secondary">View on GitHub</a>
