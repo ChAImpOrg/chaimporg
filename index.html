@@ -160,7 +160,11 @@
     .footer-links { display: flex; gap: 2rem; list-style: none; }
     .footer-links a { text-decoration: none; color: rgba(255,255,255,0.5); font-size: 0.85rem; transition: color 0.2s; }
     .footer-links a:hover { color: var(--teal); }
-    .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); width: 100%; text-align: center; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    .footer-contact { width: 100%; display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    .footer-contact a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .footer-contact a:hover { color: var(--teal); }
+    .footer-contact .footer-ein { color: rgba(255,255,255,0.55); font-size: 0.85rem; letter-spacing: 0.05em; }
+    .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); width: 100%; text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.06); }
 
     /* ── ANIMATIONS ── */
     .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
@@ -204,7 +208,7 @@
       <li><a href="#serve">Who We Serve</a></li>
       <li><a href="#casestudies">Case Studies</a></li>
       <li><a href="#founder">About</a></li>
-      <li><a href="mailto:james.whelan@chaimp.org" class="nav-cta">Get in Touch</a></li>
+      <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
     </ul>
   </nav>
 
@@ -423,7 +427,7 @@
   </section>
 
   <!-- CTA -->
-  <div class="cta-section">
+  <div class="cta-section" id="contact">
     <div class="cta-inner">
       <span class="section-label">Get Involved</span>
       <h2 class="section-title">Ready for more mission?</h2>
@@ -465,9 +469,13 @@
       <li><a href="https://linkedin.com/in/jwhelanmsft" target="_blank">LinkedIn</a></li>
       <li><a href="https://github.com/ChAImpOrg" target="_blank">GitHub</a></li>
     </ul>
+    <div class="footer-contact">
+      <a href="mailto:james.whelan@chaimp.org">✉️ james.whelan@chaimp.org</a>
+      <a href="tel:+14155069220">📞 Call or Text (415) 506-9220</a>
+      <span class="footer-ein">EIN: 42-2468355</span>
+    </div>
     <div class="footer-copy">
-      © 2026 ChAImp · Championing Nonprofits through AI and Mission Progression · chaimp.org · Woodinville, Washington<br>
-      <a href="tel:+14155069220" style="color: rgba(255,255,255,0.5); text-decoration: none;">📞 Call or Text (415) 506-9220</a> · EIN: 42-2468355
+      © 2026 ChAImp · Championing Nonprofits through AI and Mission Progression · chaimp.org · Woodinville, Washington
     </div>
   </footer>
 
