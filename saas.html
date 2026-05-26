@@ -93,6 +93,25 @@
     .offering-domain:hover { background: var(--navy-mid); transform: translateY(-1px); }
     .offering-domain .accent-gold { color: var(--color-accent-gold); }
 
+    /* ── SECURITY ── */
+    .security-section { background: var(--cream); max-width: 100%; padding: 5rem 3rem; border-top: 1px solid var(--light-gray); }
+    .security-inner { max-width: 1200px; margin: 0 auto; }
+    .security-lead { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: start; }
+    .security-shield { background: white; border: 1px solid var(--light-gray); border-radius: 20px; padding: 2.5rem; display: flex; flex-direction: column; gap: 1.25rem; align-items: flex-start; position: relative; overflow: hidden; }
+    .security-shield::before { content: ''; position: absolute; top: -40px; right: -40px; width: 160px; height: 160px; background: radial-gradient(circle, rgba(79,179,169,0.18) 0%, transparent 70%); pointer-events: none; }
+    .security-shield-icon { width: 56px; height: 56px; border-radius: 14px; background: rgba(79,179,169,0.12); display: flex; align-items: center; justify-content: center; font-size: 1.7rem; }
+    .security-shield h3 { font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: var(--navy); line-height: 1.25; }
+    .security-shield p { font-size: 0.95rem; color: var(--gray); line-height: 1.7; }
+    .security-shield .badge-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .security-badge { background: var(--cream); border: 1px solid var(--light-gray); padding: 0.3rem 0.75rem; border-radius: 100px; font-size: 0.75rem; color: var(--navy); font-weight: 600; }
+    .security-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .security-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid var(--light-gray); display: flex; flex-direction: column; gap: 0.5rem; }
+    .security-card .ico { width: 40px; height: 40px; border-radius: 10px; background: rgba(79,179,169,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 0.25rem; }
+    .security-card h4 { font-size: 1rem; font-weight: 700; color: var(--navy); line-height: 1.3; }
+    .security-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
+    .security-card a { color: var(--teal); text-decoration: none; font-weight: 600; }
+    .security-card a:hover { color: var(--color-accent-gold-dark); text-decoration: underline; }
+
     /* ── PRINCIPLES ── */
     .principles-section { background: var(--navy); max-width: 100%; padding: 5rem 3rem; }
     .principles-inner { max-width: 1200px; margin: 0 auto; }
@@ -151,7 +170,8 @@
       .nav-links { display: none; }
       .page-hero { padding: 7rem 1.5rem 3rem; }
       section, .how-section, .principles-section, .cta-section, .offerings-section { padding: 4rem 1.5rem; }
-      .how-grid, .offerings-grid, .principles-grid { grid-template-columns: 1fr; }
+      .how-grid, .offerings-grid, .principles-grid, .security-grid { grid-template-columns: 1fr; }
+      .security-lead { grid-template-columns: 1fr; gap: 1.5rem; }
       footer { padding: 3rem 1.5rem 2rem; }
       .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .footer-legal { flex-direction: column; align-items: flex-start; text-align: left; }
@@ -264,6 +284,49 @@
       </div>
     </div>
   </section>
+
+  <!-- SECURITY -->
+  <div class="security-section">
+    <div class="security-inner">
+      <span class="section-label">Security</span>
+      <h2 class="section-title">Security isn't a feature.<br>It's the foundation.</h2>
+      <p class="section-body">Every ChAImp SaaS product is built — and kept — to the security standards mission-driven organizations deserve. Donors trust you with their data. Your constituents trust you with theirs. We treat that trust as the design constraint, not an afterthought.</p>
+      <div class="security-lead">
+        <div class="security-shield fade-up">
+          <div class="security-shield-icon">🛡️</div>
+          <h3>Reviewed by Anthropic's Claude Code security review.</h3>
+          <p>Every change to a ChAImp SaaS product goes through <a href="https://github.com/anthropics/claude-code-security-review" target="_blank" rel="noopener" style="color: var(--teal); text-decoration: none; font-weight: 600;">Anthropic's Claude Code security review</a> — an AI-driven static security review purpose-built for code authored with Claude Code. It catches injection flaws, auth bypasses, unsafe deserialization, secret exposure, and broken access control before code merges. Findings are triaged and remediated as a hard gate, not a nice-to-have.</p>
+          <div class="badge-row">
+            <span class="security-badge">Pre-merge gate</span>
+            <span class="security-badge">SAST</span>
+            <span class="security-badge">Continuous on every PR</span>
+          </div>
+        </div>
+        <div class="security-grid">
+          <div class="security-card fade-up">
+            <div class="ico">🔐</div>
+            <h4>Two-factor authentication by default</h4>
+            <p>2FA is on for every account out of the box — administrators, staff, and volunteers — not buried behind an enterprise upgrade. The most common cause of nonprofit breaches is a reused password; we close that door from day one.</p>
+          </div>
+          <div class="security-card fade-up">
+            <div class="ico">🔎</div>
+            <h4>Gitleaks credential scanning</h4>
+            <p>All code is checked in to GitHub with <a href="https://github.com/gitleaks/gitleaks" target="_blank" rel="noopener">Gitleaks</a> running on every push and pull request. API keys, tokens, and credentials are caught before code can land — and rotated immediately if anything is ever flagged.</p>
+          </div>
+          <div class="security-card fade-up">
+            <div class="ico">📡</div>
+            <h4>Continuous threat monitoring</h4>
+            <p>We watch for new vulnerabilities, dependency CVEs, and emerging threats against the libraries and platforms our products depend on. When something matters, we patch — and tell you what we did.</p>
+          </div>
+          <div class="security-card fade-up">
+            <div class="ico">🧾</div>
+            <h4>Auditable by design</h4>
+            <p>Authentication events, admin actions, and data exports are logged with timestamps and actor IDs. If a board, auditor, or grantor ever asks <em>who did what, when?</em> — we can answer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- PRINCIPLES -->
   <div class="principles-section">
