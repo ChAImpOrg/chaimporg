@@ -96,6 +96,8 @@
     /* ── SECURITY ── */
     .security-section { background: var(--cream); max-width: 100%; padding: 5rem 3rem; border-top: 1px solid var(--light-gray); }
     .security-inner { max-width: 1200px; margin: 0 auto; }
+    .security-pledge { font-family: 'DM Serif Display', serif; font-size: clamp(1.4rem, 2vw, 1.7rem); line-height: 1.4; color: var(--navy); max-width: 900px; margin: -1rem 0 2.5rem; padding-left: 1.25rem; border-left: 4px solid var(--color-accent-gold); font-style: italic; }
+    .security-pledge strong { font-style: normal; color: var(--color-accent-gold-dark); font-weight: 400; }
     .security-lead { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: start; }
     .security-shield { background: white; border: 1px solid var(--light-gray); border-radius: 20px; padding: 2.5rem; display: flex; flex-direction: column; gap: 1.25rem; align-items: flex-start; position: relative; overflow: hidden; }
     .security-shield::before { content: ''; position: absolute; top: -40px; right: -40px; width: 160px; height: 160px; background: radial-gradient(circle, rgba(79,179,169,0.18) 0%, transparent 70%); pointer-events: none; }
@@ -236,7 +238,15 @@
     <p class="section-body">Each ChAImp SaaS product was shaped with a real partner nonprofit and built around the same belief: <strong style="color: var(--navy); font-weight: 600;">AI should enhance the admin experience, never replace it.</strong> The goal is always the same — give your team back the hours, so they can spend them on mission.</p>
     <div class="offerings-grid">
       <div class="offering-card fade-up">
-        <img src="cartoncrew-logo.svg" alt="CartonCrew" class="offering-logo" />
+        <svg class="offering-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="CartonCrew">
+          <g transform="translate(8,12)">
+            <path d="M4 18 L28 6 L52 18 L52 50 L28 62 L4 50 Z" fill="#0D1B2A"/>
+            <path d="M4 18 L28 30 L52 18" fill="none" stroke="#4FB3A9" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M28 30 L28 62" fill="none" stroke="#4FB3A9" stroke-width="2.4"/>
+            <path d="M16 12 L40 24" fill="none" stroke="#DAA520" stroke-width="2.4" stroke-linecap="round"/>
+          </g>
+          <text x="78" y="51" font-family="Nunito, sans-serif" font-weight="700" font-size="32" fill="#0D1B2A" letter-spacing="-0.5">Carton<tspan fill="#4FB3A9">Crew</tspan></text>
+        </svg>
         <h3>The nonprofit CRM without the complexity.</h3>
         <p class="offering-tagline">Donor, volunteer, and constituent relationships — finally readable</p>
         <p>Most nonprofit CRMs were built for enterprises and bolted-on for charities. CartonCrew is the opposite: purpose-built for community-level nonprofits, with the workflows that actually matter — donor relationships, volunteer engagement, programs, and outreach — and none of the bloat you'll never touch. AI quietly handles the busywork: drafting follow-ups, summarizing interactions, surfacing what needs attention.</p>
@@ -248,7 +258,15 @@
         <a href="https://cartoncrew.online" target="_blank" rel="noopener" class="offering-domain">Visit cartoncrew.online <span class="accent-gold">→</span></a>
       </div>
       <div class="offering-card fade-up">
-        <img src="schoolpta-logo.svg" alt="SchoolPTA" class="offering-logo" />
+        <svg class="offering-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="SchoolPTA">
+          <g transform="translate(6,16)">
+            <path d="M30 6 L58 20 L30 34 L2 20 Z" fill="#0D1B2A"/>
+            <path d="M12 24 L12 42 C12 48, 48 48, 48 42 L48 24" fill="none" stroke="#4FB3A9" stroke-width="3" stroke-linecap="round"/>
+            <line x1="58" y1="20" x2="58" y2="46" stroke="#DAA520" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="58" cy="50" r="3.5" fill="#DAA520"/>
+          </g>
+          <text x="78" y="51" font-family="Nunito, sans-serif" font-weight="700" font-size="32" fill="#0D1B2A" letter-spacing="-0.5">School<tspan fill="#4FB3A9">PTA</tspan></text>
+        </svg>
         <h3>A modern, mobile-first home for your PTA/PTO.</h3>
         <p class="offering-tagline">Built for the way parents actually use their phones</p>
         <p>PTAs and PTOs do enormous work on aging websites, email chains, and paper sign-ups. SchoolPTA brings that into a clean, mobile-first experience: events, sign-ups, volunteer slots, fundraising, and communication — all in one place, all on a phone. AI helps drafts, summaries, and reminders so the volunteer board spends evenings with their families, not their inbox.</p>
@@ -260,7 +278,17 @@
         <a href="https://schoolpta.org" target="_blank" rel="noopener" class="offering-domain">Visit schoolpta.org <span class="accent-gold">→</span></a>
       </div>
       <div class="offering-card fade-up">
-        <img src="rescuecentral-logo.svg" alt="RescueCentral" class="offering-logo" />
+        <svg class="offering-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-label="RescueCentral">
+          <g transform="translate(10,12)">
+            <ellipse cx="30" cy="40" rx="16" ry="13" fill="#0D1B2A"/>
+            <ellipse cx="14" cy="22" rx="6" ry="8" fill="#0D1B2A"/>
+            <ellipse cx="30" cy="14" rx="6.5" ry="8.5" fill="#0D1B2A"/>
+            <ellipse cx="46" cy="22" rx="6" ry="8" fill="#0D1B2A"/>
+            <ellipse cx="56" cy="36" rx="5" ry="7" fill="#0D1B2A"/>
+            <path d="M30 36 C26 32, 22 34, 24 39 L30 46 L36 39 C38 34, 34 32, 30 36 Z" fill="#DAA520"/>
+          </g>
+          <text x="80" y="51" font-family="Nunito, sans-serif" font-weight="700" font-size="32" fill="#0D1B2A" letter-spacing="-0.5">Rescue<tspan fill="#4FB3A9">Central</tspan></text>
+        </svg>
         <h3>Everything an animal rescue runs on — in one place.</h3>
         <p class="offering-tagline">Web presence, volunteers, adoptions, surrenders, fundraising</p>
         <p>Animal rescues juggle a public website, adoption applications, surrender intake, volunteer and foster coordination, and ongoing fundraising — usually across half a dozen disconnected tools. RescueCentral unifies the whole operation behind a modern web presence built for the public, and a streamlined back office built for the people doing the work. AI accelerates application review, drafts communications, and surfaces what needs attention next.</p>
@@ -291,6 +319,7 @@
       <span class="section-label">Security</span>
       <h2 class="section-title">Security isn't a feature.<br>It's the foundation.</h2>
       <p class="section-body">Every ChAImp SaaS product is built — and kept — to the security standards mission-driven organizations deserve. Donors trust you with their data. Your constituents trust you with theirs. We treat that trust as the design constraint, not an afterthought.</p>
+      <p class="security-pledge"><strong>Our pledge:</strong> security is the first decision we make on every product — and the standard every release is measured against. Not a checkbox. Not a launch-week scramble. The foundation, full stop.</p>
       <div class="security-lead">
         <div class="security-shield fade-up">
           <div class="security-shield-icon">🛡️</div>
@@ -317,6 +346,16 @@
             <div class="ico">📡</div>
             <h4>Continuous threat monitoring</h4>
             <p>We watch for new vulnerabilities, dependency CVEs, and emerging threats against the libraries and platforms our products depend on. When something matters, we patch — and tell you what we did.</p>
+          </div>
+          <div class="security-card fade-up">
+            <div class="ico">🗄️</div>
+            <h4>Row-Level Security across every database</h4>
+            <p>Tenant and user isolation is enforced at the database layer with Row-Level Security policies — not just in application code. Even a logic bug in the app can't expose one organization's data to another, because the database itself refuses the query.</p>
+          </div>
+          <div class="security-card fade-up">
+            <div class="ico">🔑</div>
+            <h4>In-house password &amp; credential management</h4>
+            <p>Application secrets, service credentials, and signing keys live in our own managed vault — never in code, never in shared spreadsheets, never in email. Access is least-privilege, rotated on a schedule, and revoked the moment it's no longer needed.</p>
           </div>
           <div class="security-card fade-up">
             <div class="ico">🧾</div>
