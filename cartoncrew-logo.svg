@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="CartonCrew">
+  <defs>
+    <linearGradient id="cc-box" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B3050"/>
+      <stop offset="100%" stop-color="#0D1B2A"/>
+    </linearGradient>
+  </defs>
+  <!-- Carton icon -->
+  <g transform="translate(8,12)">
+    <path d="M4 18 L28 6 L52 18 L52 50 L28 62 L4 50 Z" fill="url(#cc-box)"/>
+    <path d="M4 18 L28 30 L52 18" fill="none" stroke="#4FB3A9" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M28 30 L28 62" fill="none" stroke="#4FB3A9" stroke-width="2.4"/>
+    <path d="M16 12 L40 24" fill="none" stroke="#DAA520" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="78" y="52" font-family="'DM Serif Display', Georgia, serif" font-size="34" fill="#0D1B2A" letter-spacing="-0.5">Carton<tspan fill="#4FB3A9">Crew</tspan></text>
+</svg>
